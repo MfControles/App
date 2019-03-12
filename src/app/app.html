@@ -1,1 +1,22 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu id="leftMenu" [content]="content" type="overlay">
+<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+<ion-header>
+    <ion-toolbar>
+      <ion-title><ion-icon style="font-size:20px" name="md-copy"></ion-icon> Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content style="background-color: #fff!important;" class=menucolor>
+    <ion-list style="padding: 0 0 0 2%"> 
+      <ion-label menuClose (click)="openPage(p2.component)"><ion-icon class="icontitle2" style="color: #1a1a1a;font-size: 22px;padding: 0 0 0 4%" name="md-home"> Home</ion-icon></ion-label>
+        <ion-label *ngIf="Set==false"  class="Menu" (click)="toogleSettings()"><ion-icon class="icontitle" name="md-arrow-dropright"> <ion-icon class="icontitle2" name="md-build"> Ajustes</ion-icon></ion-icon></ion-label>
+        <ion-label *ngIf="Set==true" class="Menu" (click)="toogleSettings()"><ion-icon class="icontitle" name="md-arrow-dropdown"> <ion-icon class="icontitle2" name="md-build"> Ajustes</ion-icon></ion-icon></ion-label>
+        <div *ngIf="Set==true">
+          <button menuClose ion-item (click)="openPage(p6.component)"><ion-icon class="iconsubmenu" name="options"> {{p6.title}}</ion-icon></button>
+          </div>
+    </ion-list> 
+  <button ion-button menuClose style="text-align: left!important;background-color: red" (click)="CerrarSesion()"  full>
+      Cerrar Sesion
+    </button> 
+  </ion-content>  
+</ion-menu>
+<ion-nav [root]="rootPage" #content ></ion-nav>

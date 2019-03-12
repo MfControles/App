@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar style="padding: 0!important;margin: 0!important" hideBackButton="true">
+    <button ion-button menuToggle><ion-icon md="md-menu"></ion-icon></button>
+    <ion-title>Ajustes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div *ngIf="false">
+      <ion-label align=center style="color:#434549">Tamaño de letra</ion-label>
+      <ion-card> 
+    <ion-item>
+      <ion-range min="1000" max="2000" step="500" snaps="true" color="secondary" [(ngModel)]="Tam" (ionChange)=toggleAppTheme()>
+      <ion-label range-left style="font-size: 0.4cm">A</ion-label>
+      <ion-label range-middle style="font-size: 0.5cm">A</ion-label>
+      <ion-label range-right style="font-size: 0.6cm">A</ion-label>
+    </ion-range>
+    </ion-item>
+  </ion-card>   
+  </div>
+<ion-card>  
+<ion-card-header>
+    Items por página: {{Item}}
+</ion-card-header>
+<ion-card-content>
+    <ion-item>
+        <ion-range min="5" max="100" step="5" snaps="true" color="secondary" [(ngModel)]="Item" (ionChange)=ActItems()>
+        <ion-label range-left>5</ion-label>
+        <ion-label range-right>100</ion-label>
+        </ion-range>
+        </ion-item>
+</ion-card-content>
+</ion-card>
+</ion-content>

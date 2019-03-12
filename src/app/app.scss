@@ -1,16 +1,194 @@
-// http://ionicframework.com/docs/theming/
+.icontitle{
+    font-size:17px;color: #1a1a1a;
+    font-family: "Roboto", "Helvetica Neue", sans-serif!important
+}
+.icontitle2{
+    font-family: "Roboto", "Helvetica Neue", sans-serif!important
+}
+ion-icon {
+    font-family: "Roboto", "Helvetica Neue", sans-serif!important
+}
+.Menu{
+    font-size: 18px;padding: 0 0 0 2%;
+    font-family: "Roboto", "Helvetica Neue", sans-serif!important
+}
+.card-header-md {
+    text-align: center;
+    font-weight: 500; 
+    font-size: 1.6rem;
+    color: #434549;
+    padding: 18px;
+    }
+.iconsubmenu{
+    font-size: 16px;padding: 0 0 0 4%;
+    font-family: "Roboto", "Helvetica Neue", sans-serif
+}
+.toolbar-background-md {
+    background: #e32521!important;
 
+}
+.toolbar-title-md {
+    font-size: 2rem;
+    font-weight: 500;
+    color :white;
+    text-align: center;
+}
+.loading-md .loading-wrapper {
+    border-radius: 2px;
+    max-width: 280px;
+    max-height: 90%;
+    color: #e32521;
+    background: white;
+    box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+    padding: 24px;
+    }
+        ion-spinner {
+        position: relative;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        }
+        .backdrop-no-tappable {
+        opacity: 0.40;
+        }
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+        .alert-md .alert-wrapper {
+        border-radius: 2px;
+        max-width: 280px;
+        background-color: #242424;
+        }
+        .alert-md .alert-head {
+        text-align: center!important;
+        color: white;
+        padding: 24px 24px 20px;
+        }
+        .alert-md .alert-message {
+        color: #acacac;
+        max-height: 240px;
+        font-size: 18px;
+        text-align: center;
+        }
+        .alert-md .alert-button {
+        text-align: center!important;
+        border-radius: 2.5px;
+        position: relative;
+        overflow: hidden;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: white;
+        background-color: #e32521;
+        margin: 8px 8px 0 0;
+        padding: 8px;
+        }
+        .alert-md{
+            text-align: center!important;
+        }
+        .alert-md .alert-message, .alert-md .alert-input-group {
+            padding: 0 24px 10px;
+            }
+        .alert-md .alert-button .button-inner {
+            -webkit-box-pack: end;
+            -webkit-justify-content: center;
+            -ms-flex-pack: end;
+        justify-content: center;
+        }
+        .alert-md .alert-button-group {
+        padding: 8px 8px 16px 24px;
+        }
+        .menucolor{
+            .scroll-content {
+                background-color: white!important;
+            }
+            
+        }
+        .content-md {
+            background-image: -webkit-linear-gradient(#1d1d1b, #434549,#1d1d1b);
+        }
+        .BotonSi{
+            padding: 0px 14px 0px 14px!important;
+        }
+        .alert-md .alert-radio-group, .alert-md .alert-checkbox-group{
+        background: white!important;
+        }
+        .segment-md .segment-button {
+            border-top: 1px solid #434549;
+            background-color: #acacac;
+        }
+        .checkbox-md.checkbox-disabled, .item-md.item-checkbox-disabled ion-label {
+            opacity: 1;
+            }
+            .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+                border-bottom-color: #434549;
+                -webkit-box-shadow: inset 0 -1px 0 0 #434549;
+                box-shadow: inset 0 -1px 0 0 #434549;
+                }
+
+::-webkit-scrollbar-track
+{
+-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0) !important;
+border-radius: 0px!important;
+background-color: rgba(245, 245, 245, 0)!important;
+}
+
+::-webkit-scrollbar
+{
+width: 0px!important;
+background-color: rgba(245, 245, 245, 0)!important;
+}
+
+::-webkit-scrollbar-thumb
+{
+border-radius: 0px!important;
+-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0)!important;
+background-color: rgba(214, 41, 41, 0)!important;
+}
+.select-disabled, .item-select-disabled ion-label {
+    opacity: 1;
+    pointer-events: none;
+}.card-md {
+    margin-top: 5px!important;
+    border-radius: 10px;
+    background: #434549;
+    border: 1px solid white!important;
+}.alert-md .alert-button {
+    width: 100%!important;
+}
+.Tittle1{
+    color:#434549!important;
+    text-align: center;
+    font-size: 15px!important;
+}
+.list-md ion-item-sliding {
+    background: transparent!important;
+}
+button.bar-buttons.bar-buttons-md.bar-button.bar-button-md.bar-button-default.bar-button-default-md.bar-button-menutoggle.bar-button-menutoggle-md {
+    color: white!important;
+}
+.checkbox-md .checkbox-checked {
+    border-color: #e32521;
+    background-color: #e32521;
+}
+.card-header-md {
+    color: white;
+}
+.searchbar-md .searchbar-input {
+    border-radius: 10px;
+    border: 1px solid white;
+    height: auto;
+    color: #141414;
+    background-color: #434549;
+}
+.list-md ion-item-options .button {
+    margin-left: 5px;
+    border-radius: 0px;
+}
+.searchbar-md .searchbar-input {
+    color: white;
+}
+.card-header-md + .card-content-md, .card-md .item + .card-content-md {
+    padding-top: 0;
+    background-color: white;
+}
+ion-app.md [padding] .scroll-content {
+    padding: 10px;
+}

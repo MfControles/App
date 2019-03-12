@@ -1,0 +1,20 @@
+<ion-content align="center" padding class=Login >
+  <div  style="margin-top:10%;" (press)="Pushhh()">
+    <img width="200px" src="assets/imgs/Controles.png"/>
+  </div>
+  <ion-item>
+      <ion-label >Usuario:</ion-label>
+      <ion-input type="text" placeholder="Usuario"[(ngModel)]="Auth.User" block></ion-input>
+  </ion-item>
+    <ion-item>
+        <ion-label >Contraseña:</ion-label>
+        <ion-input  type="password" placeholder="Password"  [(ngModel)]="Auth.Password" block></ion-input>
+    </ion-item>
+    <button ion-button style="margin-top:30px;font-size:18px;padding:18px 35px;border: 1px solid white;border-radius: 5px" (click)='Login()' block>Login</button>
+    <ion-fab bottom right >
+        <button ion-fab (click)="Settings()" style="border: 1px solid white;"><ion-icon name="settings"></ion-icon></button>
+    </ion-fab>
+</ion-content>
+<ion-footer style="text-align:start;color: white;;background: #434549;font-size: 11px;">
+  Versión 1.0.0
+ </ion-footer>

@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-navbar hideBackButton="true">
+      <ion-title align=center>Ajustes</ion-title>
+      <ion-buttons end>
+          <button ion-fab mini style="border:2px solid red;color:red;background:#ffffff " (click)="Cancel()">
+              <ion-icon name="close"></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar>  
+  </ion-header>
+  
+  <ion-content padding>
+      <ion-card>
+          <ion-card-content>
+            <ion-item>
+              <ion-label>Url Servidor: </ion-label>
+              <ion-input style="font-size:14px" type="text" [(ngModel)]="Url"></ion-input>
+              </ion-item>
+          </ion-card-content>
+        </ion-card>
+         <button ion-button style="font-size:18px;padding:18px 35px " (click)="Guardar()" block>
+          Guardar Ajustes
+         </button>
+  </ion-content>
+  
+
+  
